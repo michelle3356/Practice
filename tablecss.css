@@ -1,6 +1,13 @@
 body {
   font-family: 'Times New Roman', Normal;
 }
+.week{
+  border:8px blue groove;
+}
+
+.weather{
+  text-align: center;
+}
 
 .Monday{
 margin-top: 30px;
@@ -33,4 +40,18 @@ height: 300px
 .trans-link:hover:before{
   content: attr(data-zh);
   font-family: '標楷體';
+}
+
+.google{
+  width: 20px;
+  height: 20px;
+}
+
+.Sunday{
+  font-size: 20px;
+  margin-top: 30px;
+}
+
+.select{
+  margin-bottom: 5px;
 }
