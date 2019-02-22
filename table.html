@@ -1,8 +1,10 @@
 <!doctype html>
   <html>
     <head>
+      <meta charset="UTF-8">
       <title>The Weather Table</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="./tablecss.css">
     </head>
     <body>
       <h1>Weather</h1>
@@ -27,13 +29,20 @@
           </tr>
         </tbody>
       </table>
-      <label>
+      <label class="Monday">
         On Monday,you can choose
+        </br>
         <input type="radio" name="tools" value="umbrella" size="30" maxlength="150">umbrella
         <input type="radio" name="tools" vallue="parasol" size="30" maxlength="150">parasol
       </label>
-      <p>After rain there’s a rainbow, after a storm there’s calm, after night there’s a morning, and after an ending there’s a new beginning. </p>
-      <img src="./rainbow.jpg" alt="rainbow" class="img-thumbnail">
+      </br>
+      <p class="wordstyle">On Tuesday to Saturday, maybe you can see the rainbow.</p>
+      <div
+        data-en="After rain there’s a rainbow, after a storm there’s calm, after night there’s a morning, and after an ending there’s a new beginning."
+        data-zh="雨後會有彩虹，暴風雨後會有寧靜，黑夜之後會有黎明，而結束之後會有新的開始。"
+        class="trans-link">
+      </div>
+      <img src="./rainbow.jpg" alt="rainbow" class="img-thumbnail rainbow" title="rainbow">
 
     </body>
   </html>
