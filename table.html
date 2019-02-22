@@ -2,13 +2,14 @@
   <html>
     <head>
       <meta charset="UTF-8">
-      <title>The Weather Table</title>
+      <title>Schedule</title>
       <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
       <link rel="stylesheet" href="./tablecss.css">
+      <a href="https://icons8.com/icon/16776/wikipedia"></a>
     </head>
     <body>
-      <h1>Weather</h1>
-      <table style="border:8px blue groove;" cellpadding="10" border='1'>
+      <h1>Schedule</h1>
+      <table class="week" cellpadding=10 border='1'>
         <thead>
           <tr>
             <th scope="col">Monday</th>
@@ -20,7 +21,7 @@
             <th scope="col">Sunday</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody class="weather">
           <tr>
             <td>sunny</td>
             <td colspan="2">rain</td>
@@ -29,13 +30,14 @@
           </tr>
         </tbody>
       </table>
+
       <label class="Monday">
         On Monday,you can choose
         </br>
         <input type="radio" name="tools" value="umbrella" size="30" maxlength="150">umbrella
         <input type="radio" name="tools" vallue="parasol" size="30" maxlength="150">parasol
       </label>
-      </br>
+
       <p class="wordstyle">On Tuesday to Saturday, maybe you can see the rainbow.</p>
       <div
         data-en="After rain there’s a rainbow, after a storm there’s calm, after night there’s a morning, and after an ending there’s a new beginning."
@@ -43,6 +45,30 @@
         class="trans-link">
       </div>
       <img src="./rainbow.jpg" alt="rainbow" class="img-thumbnail rainbow" title="rainbow">
+      <div class="connect">If you went to know more about the rainbow,Please click the link below for further information
+      </br>
+      <a href="https://zh.wikipedia.org/wiki/Wikipedia:%E9%A6%96%E9%A1%B5" target="_blank">
+      <img src="https://img.icons8.com/windows/32/000000/wikipedia.png">
+      </a>
+      <a href="https://www.google.com.tw/" target="_blank">
+      <img src="./google.png" alt="google" class="google">
+      </a>
+      <div>Icons made by <a href="https://www.freepik.com/" title="Freepik">Freepik</a>
+         from <a href="https://www.flaticon.com/" 			    title="Flaticon">www.flaticon.com</a>
+          is licensed by <a href="http://creativecommons.org/licenses/by/3.0/"
+          title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a>
+      </div>
+      </a>
+      </div>
+      <p class="Sunday">On Weekend,Do you went</p>
+      <select name="recreation">
+        <option value="movie">Movie</option>
+        <option value="Hiking">Hiking</option>
+        <option value="Trip">Trip</option>
+        <option value="Tabletop_game">Tabletop game</option>
+        <option value="KTV">KTV</option>
+      </select>
+
 
     </body>
   </html>
