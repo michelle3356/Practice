@@ -1,0 +1,36 @@
+body {
+  font-family: 'Times New Roman', Normal;
+}
+
+.Monday{
+margin-top: 30px;
+font-size: 20px;
+}
+
+.wordstyle{
+font-size: 20px;
+margin-top: 30px;
+margin-bottom: 5px;
+}
+
+.rainbow{
+weight: 300px;
+height: 300px
+}
+
+.trans-link {
+  color: #000;
+}
+
+.trans-link:hover {
+  background-color: pink;
+}
+
+.trans-link:before {
+  content: attr(data-en);
+}
+
+.trans-link:hover:before{
+  content: attr(data-zh);
+  font-family: '標楷體';
+}
